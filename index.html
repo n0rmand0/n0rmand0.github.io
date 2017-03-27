@@ -23,10 +23,12 @@
         <div class='contact__col'>
           <h1>Ricky Normandeau</h1>
           <i class='icon-pencil'></i>
+          <span class='my-email' id='my-email'>rjnormandeau</span>
           <script>
-            var domain = '@gmail.com';
             var user = 'rjnormandeau';
-            document.write('<a href="mailto:'+user+domain+'" title: "Send me an email!">'+user+domain+'</a>');
+            document.getElementById('my-email').onclick=function(){
+              window.location.href='mailto:'+user+'@gmail.com';
+            }
           </script>
           <br>
           <i class='icon-phone'></i>
