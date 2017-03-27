@@ -23,7 +23,11 @@
         <div class='contact__col'>
           <h1>Ricky Normandeau</h1>
           <i class='icon-pencil'></i>
-          <a href='mailto:rjnormandeau@gmail.com' title='Send me an email!'>rjnormandeau@gmail.com</a>
+          <script>
+            var domain = '@gmail.com';
+            var user = 'rjnormandeau';
+            document.write('<a href="mailto:'+user+domain+'" title: "Send me an email!">'+user+domain+'</a>');
+          </script>
           <br>
           <i class='icon-phone'></i>
           207.992.3931
